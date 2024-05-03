@@ -4,7 +4,8 @@
 #include <string>
 #include <unordered_map>
 
-int main() {
+int main()
+{
     sjtu::Trie trie;
     std::unordered_map<std::string, std::string> map;
 
@@ -32,7 +33,7 @@ int main() {
     // Check that all key-value pairs can be retrieved correctly from the Trie
     for (const auto& pair : map) {
         std::cout << "Retrieving " << pair.first << " -> " << pair.second << std::endl;
-        if(trie.Get<std::string>(pair.first) == nullptr){
+        if (trie.Get<std::string>(pair.first) == nullptr) {
             std::cout << "Test failed: " << pair.first << " does not exist" << std::endl;
             return 1;
         }

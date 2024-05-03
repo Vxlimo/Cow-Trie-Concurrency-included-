@@ -2,7 +2,8 @@
 #include <iostream>
 #include <string>
 
-int main() {
+int main()
+{
     sjtu::Trie trie;
     trie = trie.Put<std::string>("key1", "value1");
     trie = trie.Put<std::string>("key2", "value2");
